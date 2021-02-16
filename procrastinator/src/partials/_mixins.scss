@@ -1,0 +1,28 @@
+@import "./variables";
+
+// Break Point Mixins for Mobile, Tablet and Desktop.
+//Since mobile is the smallest screen, we dont have min-width  break point for it.
+//Since desktop is the largest screen, we dont have max-width break point for it. 
+
+@mixin mobile {
+  @media screen
+  and (max-width: $tablet-break-point - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen
+  and (min-width: $tablet-break-point)
+  and (max-width: $desktop-break-point - 1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen
+  and (min-width: $desktop-break-point) {
+    @content;
+  }
+}
+
