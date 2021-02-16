@@ -1,0 +1,42 @@
+
+.tasklist {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height:max-content;
+  margin: auto;
+}
+
+.tasks {
+    width: 42rem;
+    background-color: rgb(85, 80, 80);
+    color: white;
+    margin-left: 0px;
+    border-right: 1px solid rgb(66, 63, 63);
+    min-height: calc(100vh);
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 84px;
+  
+   
+  
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0 30px 20px 0;
+    }
+  
+    &__list li {
+      display: flex;
+      line-height: 18px;
+      color: wheat;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      list-style-type: none;
+      border-bottom: 1px solid #f0f0f0;
+      
+    }
+  }
