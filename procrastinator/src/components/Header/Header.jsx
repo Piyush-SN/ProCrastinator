@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import '../Header/Header.scss';
 import logo from '../images/favicon-32x32.png';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
@@ -9,30 +10,28 @@ const Header = () => {
       <>
         <header>
           <div className="title-bar">
-            <div >
-              <img className="title-bar__logo" src={logo} alt="ProCrastinator logo"/>
-            </div>
-            <div className='title-bar__nav'>
-              <nav >
-                <ul>
-                  <li>
-                    <a className="title-bar__nav-link howto"  
-                        href="">How To be a Pro
+           
+          <Link to="/">
+            <img className="title-bar__logo" src={logo} alt="ProCrastinator logo"/>
+            </Link>             
+                    {/* <a className="title-bar__nav howto"  
+                        href="/howto">How To be a Pro
                         <span className="howto-strike">
                           Crastinator
-                        </span>
-                    </a>       
-                  </li>                                   
-                  <li>
-                    <a className="title-bar__nav-link settings" 
+                        </span> 
+                    </a>   */}
+
+                  <Link to="/howto" className="title-bar__nav howto" >How To be a Pro
+                        <span className="howto-strike">
+                          Crastinator
+                        </span> </Link>
+
+                    <a className="title-bar__nav settings" 
                     href="">
                       <Tooltip title = 'Settings'>
                         <SettingsOutlinedIcon/>
-                      </Tooltip></a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                      </Tooltip>
+                    </a>
           </div>
         </header>
       </>
