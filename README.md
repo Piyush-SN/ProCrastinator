@@ -6,7 +6,7 @@ BrainStation capstone
 This is a project I developed for my capstone project at Brainstation.
 
 **``Tech Stack``**
--	HTML, SCSS, React.js, Material UI, Firebase/Firestore.
+-	HTML, CSS, React.js, Material UI, Firebase/Firestore.
 
 **``Here is the vision which gave me the drive to create this app``**
 
