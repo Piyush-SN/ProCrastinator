@@ -1,6 +1,6 @@
 @import "../../partials/mixins";
 
-.main{
+.mainh{
 
   display: flex;
       justify-content: center;
@@ -8,6 +8,7 @@
 
     @include mobile {
         flex-direction: column;
+        // padding: 0 1rem;
     }
   
     @include tablet {
@@ -20,14 +21,15 @@
 
 }
 
-.tasklist {
+.tasklisth {
   display: flex;
   justify-content: center;
   max-width: 100%;
   max-height:max-content;
+  // margin: auto;
 }
 
-.tasks {
+.tasksh {
     width: 42rem;
     background-color: rgb(85, 80, 80);
     color: white;
@@ -46,17 +48,23 @@
       font-size: 20px;
       font-weight: normal;
       margin: 0 30px 20px 0;
+      font-style: italic;
+      color: wheat;
     }
   
-    &__list li {
+    &__listh li {
       display: flex;
       line-height: 18px;
       color: wheat;
       padding-top: 10px;
       padding-bottom: 10px;
       font-size: 14px;
-      list-style-type: none;
-      border-bottom: 1px solid #f0f0f0;
+      font-style: italic;
       
     }
+  }
+
+  p{
+    font-style: italic;
+    color: wheat;
   }

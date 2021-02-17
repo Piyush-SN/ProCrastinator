@@ -12,7 +12,7 @@ const DeleteButton = ({ id }) => {
     return (
       
       <div>
-         <Tooltip title='Done'>
+         <Tooltip title='Delete'>
             <DeleteRoundedIcon className="delete-btn" fontSize="medium" 
               onClick={() => deleteTask()}/>
          </Tooltip>

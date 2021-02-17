@@ -25,8 +25,8 @@ const TaskList = () => {
                     </ul>
                     <AddTask/>
                 </div>
-                <CompletedTaskList/>
             </section>
+            <CompletedTaskList/>
         </div>         
     )
 }
